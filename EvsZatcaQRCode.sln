@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvsZatcaQRCode", "EvsZatcaQRCode\EvsZatcaQRCode.csproj", "{F3F93EB5-AE2A-4655-8D1A-3BCACA34A4CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvsZatcaQRCodeAPI", "EvsZatcaQRCodeAPI\EvsZatcaQRCodeAPI.csproj", "{51709774-5F50-44F2-BB6C-079621EB5353}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F3F93EB5-AE2A-4655-8D1A-3BCACA34A4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3F93EB5-AE2A-4655-8D1A-3BCACA34A4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3F93EB5-AE2A-4655-8D1A-3BCACA34A4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51709774-5F50-44F2-BB6C-079621EB5353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51709774-5F50-44F2-BB6C-079621EB5353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51709774-5F50-44F2-BB6C-079621EB5353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51709774-5F50-44F2-BB6C-079621EB5353}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
