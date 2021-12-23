@@ -24,17 +24,8 @@ namespace EvsZatcaQRCodeAPI
             Tax = Request.QueryString["Tax"];
             if (!String.IsNullOrWhiteSpace(Seller) && !String.IsNullOrWhiteSpace(TaxNo) && !String.IsNullOrWhiteSpace(dateTime) && !String.IsNullOrWhiteSpace(Total) && !String.IsNullOrWhiteSpace(Tax))
             {
-                DateTime dt;
                 double _Total;
                 double _Tax;
-                try
-                {
-                    dt = Convert.ToDateTime(dateTime);
-                }
-                catch(Exception ex)
-                {
-                    throw new Exception("Invalid Date Time ",ex);
-                }
                 try
                 {
                     _Total = Convert.ToDouble(Total);
@@ -51,7 +42,7 @@ namespace EvsZatcaQRCodeAPI
                 {
                     throw new Exception("Invalid Tax Amount ", ex);
                 }
-                Response.Write(TLV.TLVs(Seller,TaxNo,dt,_Total,_Tax));
+                Response.Write(TLV.TLVs(Seller,TaxNo, dateTime, _Total,_Tax));
             }
             else
             {

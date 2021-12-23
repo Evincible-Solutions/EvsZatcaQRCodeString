@@ -12,12 +12,11 @@ namespace EvsZatcaQRCode
         static byte[] Total;
         static byte[] Tax;
 
-        public static string TLVs(String Seller, String TaxNo, DateTime dateTime, Double Total, Double Tax)
+        public static string TLVs(String Seller, String TaxNo, string dateTime, Double Total, Double Tax)
         {
             TLV.Seller = Encoding.UTF8.GetBytes(Seller);
             TLV.VatNo = Encoding.UTF8.GetBytes(TaxNo);
-
-            TLV.dateTime = Encoding.UTF8.GetBytes(dateTime.ToString());
+            TLV.dateTime = Encoding.UTF8.GetBytes(dateTime);
             TLV.Total = Encoding.UTF8.GetBytes(Total.ToString());
             TLV.Tax = Encoding.UTF8.GetBytes(Tax.ToString());
             return ToBase64();
